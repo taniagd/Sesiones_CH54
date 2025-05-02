@@ -1,0 +1,88 @@
+*{ /* Resetear estilos que vienen por defecto del navegador */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* Incluir el padding y el borde dentro del ancho y alto del elemento */
+}
+
+/* Fuente de encabezado del documento */
+.eater-regular {
+    font-family: "Eater", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Fuente para título de tarjeta. 
+Para las fuentes de google fonts que aparecen con <uniquifier> en la clase, es necesario que modifiquen esa palabra por un nombre, por ejemplo, en este caso usaré esta fuente para los títulos de las tarjetas, por lo cual, le pondré titulo-banda. No olviden eliminar los corchetes
+Ejemplo: 
+Antes: .grenze-gotisch-<uniquifier>
+Modificación .grenze-gotisch-titulo-banda
+ */
+
+.grenze-gotisch-titulo-banda {
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1{
+    font-family: "Eater", serif; /* Nombre de la fuente personalizada */
+    text-align: center; /* Se alinea al centro el encabezado principal */
+}
+
+.tarjeta-banda{
+    background-color: #bd37cea1; /* Fondo de color rosa */
+    border: 3px solid black;
+    /* border-style: dashed solid; */
+    /* padding: 20px 9px 52px 7px; TRouBLe Top, Right, Bottom, Left */
+    padding: 30px 70px; /* Espacio interno entre el contenido y el borde */
+    margin: 60px auto; /* Separación entre elementos, aplica a los 4 lados T,R,B,L  y centrado horizontal*/
+    max-width:400px; /* Ancho máximo de 400px */
+    border-radius: 15px;/* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Sombra. Los valores en orden de aparición representan: 
+    Desplazamiento horizontal (offset-x); es decir, la sombra, en este caso, no se moverá hacia la izquierda ni la derecha.
+    Desplazamiento vertical (offset-y), es decir, la sombra se moverá 4px hacia abajo.
+    Blur-radius (difuminado), es decir, cuánto más alto sea el valor, más difusa será la sombra, en este caso es muy suave. 
+    rgba(0, 0, 0, 1), es el color de la sombra.
+    0 representa transparencia
+    1 opacidad
+    */
+}
+
+/* Estilo para el nombre de la banda dentro de la tarjeta */
+.nombre-banda {
+    font-family: "Grenze Gotisch", serif; /* Fuente para título de banda */
+    color: darkmagenta;/* Color marrón cálido */
+    text-align: center;/* Centra el texto */
+    font-size: 40px;
+}
+
+/* Estilo para la descripción de la banda*/
+.descripcion {
+    font-size: 18px;/* Tamaño de letra*/
+    color: #333;/* Color gris oscuro para dar contraste */
+    line-height: 1.5;/* Altura de línea para mejorar la legibilidad */
+}
+
+/* Pseudoelemento: Se añaden a los selectores y permiten añadir estilos a una parte concreta del documento.
+Para el siguiente ejemplo, tenemos un pseudo-elemento que da estilo a la primera letra de la descripción */
+.descripcion::first-letter {
+    font-size: 30px;                   /* Letra inicial más grande */
+    font-weight: bold;                /* Letra inicial en negrita */
+    color: #681b98;                    /* Color morado oscuro para destacar */
+}
+
+/*Pseudoclase: Es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Ayudan a reducir el exceso de clases.
+Para el ejemplo, tenemos una pseudo-clase para cuando el mouse pasa sobre la tarjeta */
+
+.tarjeta-banda:hover {
+    background-color: rgba(97, 61, 206, 0.78);         /* Cambia el fondo a un tono diferente, del rosa que establecimos en la línea 32 a este morado */
+    transform: scale(1.2);/* Agranda ligeramente la tarjeta al pasar el cursor */
+}
+
+
+
+
+  
+
+
