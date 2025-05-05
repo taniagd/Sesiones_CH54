@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto </title>
+</head>
+<body>
+     <header>
+        <h1> ¡Contáctanos! </h1>
+     </header>
+
+    <form action="" method="POST">
+        <fieldset> <!-- Agrupación por campos -->
+            <legend> Datos básicos del usuario </legend>
+            Nombre: <input type="text" placeholder="Nancy" required>  
+            <br>
+            Apellido Paterno: <input type="text" placeholder="Moreno" required>
+            Apellido Materno: <input type="text" placeholder="Ramírez" required>
+        </fieldset>
+        <fieldset>
+            <legend> Datos de contacto </legend>
+            Correo electrónico: <input type="email" placeholder="nancy.moreno@generation.org" required>
+            <br>
+            Teléfono: <input type="tel" required>
+        </fieldset>
+        <fieldset>
+            <legend> Datos del pedido </legend>
+            <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu comprensión! </p>
+
+            Número de tamales: <input type="number" min="20" max="500" required>
+        </fieldset>
+    </form>
+</body>
+</html>
