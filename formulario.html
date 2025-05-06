@@ -29,6 +29,26 @@
             <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu comprensión! </p>
 
             Número de tamales: <input type="number" min="20" max="500" required>
+            <br>
+            Fecha de entrega: <input type="date">
+        </fieldset>
+        <fieldset>
+            <legend> Datos del envío </legend>
+        <!-- El valor del atributo for de label debe ser igual al valor del atributo id del input correspondiente-->
+            <label for="recoger-en-sucursal"> 
+                 <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio"> Recoger en sucursal
+            </label>
+            <label for="envio-a-domicilio">
+                <input id="envio-a-domicilio" type="radio" name="tipo-de-envio"> Envío a domicilio
+            </label>
+
+            <label for="punto-medio">
+                <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto medio
+            </label>
+            
+            <input id="delivery" type="radio" name="tipo-de-envio"> 
+            <label for="delivery"> Delivery </label>
+
         </fieldset>
     </form>
 </body>
