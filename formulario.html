@@ -1,55 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto </title>
-</head>
-<body>
-     <header>
-        <h1> ¡Contáctanos! </h1>
-     </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+  </head>
+  <body>
+
+    <header>
+      <h1>¡Contáctanos!</h1>
+    </header>
 
     <form action="" method="POST">
-        <fieldset> <!-- Agrupación por campos -->
-            <legend> Datos básicos del usuario </legend>
-            Nombre: <input type="text" placeholder="Nancy" required>  
-            <br>
-            Apellido Paterno: <input type="text" placeholder="Moreno" required>
-            Apellido Materno: <input type="text" placeholder="Ramírez" required>
-        </fieldset>
-        <fieldset>
-            <legend> Datos de contacto </legend>
-            Correo electrónico: <input type="email" placeholder="nancy.moreno@generation.org" required>
-            <br>
-            Teléfono: <input type="tel" required>
-        </fieldset>
-        <fieldset>
-            <legend> Datos del pedido </legend>
-            <p> Nota: El número mínimo de tamales para generar un pedido por este medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu comprensión! </p>
+      <fieldset> <!-- Agrupación por campos -->
+        <legend>Datos básicos del usuario</legend>
+        Nombre: <input type="text" placeholder="Nancy" required />
+        <br />
+        Apellido Paterno:
+        <input type="text" placeholder="Moreno" required /> Apellido Materno:
+        <input type="text" placeholder="Ramírez" required />
+      </fieldset>
+      <fieldset>
+        <legend>Datos de contacto</legend>
+        Correo electrónico:
+        <input
+          type="email"
+          placeholder="nancy.moreno@generation.org"
+          required
+        />
+        <br />
+        Teléfono: <input type="tel" required />
+      </fieldset>
+      <fieldset>
+        <legend>Datos del pedido</legend>
+        <p>
+          Nota: El número mínimo de tamales para generar un pedido por este
+          medio es de 20 piezas y máximo de 500 piezas. ¡Gracias por tu
+          comprensión!
+        </p>
 
-            Número de tamales: <input type="number" min="20" max="500" required>
-            <br>
-            Fecha de entrega: <input type="date">
-        </fieldset>
-        <fieldset>
-            <legend> Datos del envío </legend>
+        Número de tamales: <input type="number" min="20" max="500" required />
+        <br />
+        Fecha de entrega: <input type="date" />
+      </fieldset>
+      <fieldset>
+        <legend>Datos del envío</legend>
         <!-- El valor del atributo for de label debe ser igual al valor del atributo id del input correspondiente-->
-            <label for="recoger-en-sucursal"> 
-                 <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio"> Recoger en sucursal
-            </label>
-            <label for="envio-a-domicilio">
-                <input id="envio-a-domicilio" type="radio" name="tipo-de-envio"> Envío a domicilio
-            </label>
+        <label for="recoger-en-sucursal">
+          <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio" required>
+          Recoger en sucursal
+        </label>
 
-            <label for="punto-medio">
-                <input id="punto-medio" type="radio" name="tipo-de-envio"> Punto medio
-            </label>
-            
-            <input id="delivery" type="radio" name="tipo-de-envio"> 
-            <label for="delivery"> Delivery </label>
+        <label for="envio-a-domicilio">
+          <input id="envio-a-domicilio" type="radio" name="tipo-de-envio" />
+          Envío a domicilio
+        </label>
 
-        </fieldset>
+        <input id="delivery" type="radio" name="tipo-de-envio" />
+        <label for="delivery"> Delivery </label>
+
+        <label for="punto-medio">
+          <input id="punto-medio" type="radio" name="tipo-de-envio" /> Punto
+          medio
+        </label>
+
+        <br />
+
+        <span> Por favor, selecciona una opción del siguiente menú: </span>
+        <br />
+
+        <select name="entregas-punto-medio">
+          <option value="seleccion" disabled selected> Selecciona una opción </option>
+          <option value="metro-apatlaco"> Metro Apatlaco </option>
+          <option value="cablebus-santa-martha">Cablebús Santa Martha</option>
+          <option value=""> Palacio Municipal de Neza </option>
+          <option value="">Faro de Oriente</option>
+          <option value="">Metro Insurgentes</option>
+          <option value="">Metrobús Tepalcates</option>
+          <option value="">Centro de Texcoco</option>
+          <option value="">FES Zaragoza</option>
+          <option value="">Estela de Luz</option>
+          <option value="">Coyoacán</option>
+          <option value="">Metro Oceanía</option>
+          <option value="">Museo Yancuic</option>
+        </select>
+
+        <br />
+
+        <label>Choose a browser from this list:
+          <input list="browsers" name="myBrowser"/>
+        </label>
+        <datalist id="browsers"> <!-- Datalist no es soportado por Firefox, ojito ahí y cuidado con el uso -->
+          <option value="Chrome"></option>
+          <option value="Firefox"></option>
+          <option value="Internet Explorer"></option>
+          <option value="Opera"></option>
+          <option value="Safari"></option>
+          <option value="Microsoft Edge"></option>
+        </datalist>
+
+        <br>
+        <!-- Casilla de verificación -->
+        <input type="checkbox" required> Acepto términos y condiciones
+        <br>
+        <!-- Se renderiza como un botón de enviar -->
+        <!-- <input type="submit"> -->
+      </fieldset>
+
+      <button type="submit"> ¡Ámonos recio! </button>
     </form>
-</body>
+  </body>
 </html>
