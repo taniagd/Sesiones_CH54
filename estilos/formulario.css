@@ -1,0 +1,18 @@
+/* Resetear estilos del navegador */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Declaración de variables para reutilizar colores */
+:root{
+    --color_fondo: #FAB2EA;
+    --color_acento: #D0FEF5;
+    --color_texto: black;
+    --color_botones:#830A48;
+}
+
+body{
+    background-color: var(--color_fondo);
+}
