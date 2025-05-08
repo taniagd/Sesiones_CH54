@@ -11,8 +11,37 @@
     --color_acento: #D0FEF5;
     --color_texto: black;
     --color_botones:#830A48;
+    --fuente_principal: "Arial", serif;
+    --padding_tarjetas: 5px;
 }
 
 body{
     background-color: var(--color_fondo);
+}
+
+form{
+    text-align: center; /* Alinear el contenido del elemento, no alinea el bloque en sí mismo */
+    width: 400px;
+    margin: 30px auto;
+
+}
+
+.datos-basicos{
+    float:left;
+}
+
+.datos-contacto{
+    clear: both;
+    float:right;
+}
+
+input{
+    display: block;
+    background-color: var(--color_acento);
+}
+
+button{
+    display: block;
+    width: 100px;
+    margin: 20px auto; /* 20px para top y bottom y automático para right y left */
 }

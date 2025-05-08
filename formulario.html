@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="./estilos/formulario.css">
   </head>
   <body>
-
-    <header>
+    
+    <header> 
       <h1>¡Contáctanos!</h1>
     </header>
-
+    
+    <main>
     <form action="" method="POST">
-      <fieldset> <!-- Agrupación por campos -->
+      <fieldset class="datos-basicos"> <!-- Agrupación por campos -->
         <legend>Datos básicos del usuario</legend>
-        Nombre: <input type="text" placeholder="Nancy" required />
-        <br />
-        Apellido Paterno:
-        <input type="text" placeholder="Moreno" required /> Apellido Materno:
-        <input type="text" placeholder="Ramírez" required />
+        <label for=""> Nombre: </label>
+        <input type="text" placeholder="Nancy" required>
+        <label for=""> Apellido Paterno: </label>
+        <input type="text" placeholder="Moreno" required>
+        <label for="">Apellido Materno:</label>
+        <input type="text" placeholder="Ramírez" required>
       </fieldset>
-      <fieldset>
+      <fieldset class="datos-contacto">
         <legend>Datos de contacto</legend>
         Correo electrónico:
         <input
@@ -30,7 +32,7 @@
           required
         />
         <br />
-        Teléfono: <input type="tel" required />
+        Teléfono: <input type="tel" required>
       </fieldset>
       <fieldset>
         <legend>Datos del pedido</legend>
@@ -110,5 +112,6 @@
 
       <button type="submit"> ¡Ámonos recio! </button>
     </form>
+  </main>
   </body>
 </html>
