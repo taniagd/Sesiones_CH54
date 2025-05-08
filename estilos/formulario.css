@@ -21,23 +21,45 @@ body{
 
 form{
     text-align: center; /* Alinear el contenido del elemento, no alinea el bloque en sí mismo */
-    width: 400px;
+    width: 500px;
     margin: 30px auto;
-
 }
 
-.datos-basicos{
+nav ul {
+    display: flex;/* Se convierte en un contenedor flexible */
+    justify-content: space-between; /* Distribuye uniformemente los elementos a lo largo del contenedor */
+    list-style-type: none; /* Borra los estilos de bullet point de mi lista desordenada */
+    padding:10px 40px;
+    border: 5px solid black;
+}
+
+.elemento-navegacion a{
+    text-decoration: none;
+    color: var(--color_acento);
+}
+
+.elemento-navegacion a:hover{ /* Uso de pseudoclase hover */
+    color: var(--color_botones);
+    text-decoration: underline overline;
+}
+
+/* .datos-basicos{
     float:left;
-}
+} */
 
-.datos-contacto{
+/* .datos-contacto{
     clear: both;
     float:right;
-}
+} */
 
 input{
     display: block;
     background-color: var(--color_acento);
+    margin:0 auto;
+}
+
+input[type="radio"]{ /* Selector de atributo */
+    display: inline;
 }
 
 button{
